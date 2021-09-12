@@ -2,39 +2,39 @@ package org.firstinspires.ftc.teamcode.drive.TeleAuto;
 
 public class TeleAuto_Instance {
 
-    private double time;
+    public double time;
 
-    private boolean x;
-    private boolean y;
-    private boolean a;
-    private boolean b;
-    private boolean xShift;
-    private boolean yShift;
-    private boolean aShift;
-    private boolean bShift;
+    public boolean x;
+    public boolean y;
+    public boolean a;
+    public boolean b;
+    public boolean xShift;
+    public boolean yShift;
+    public boolean aShift;
+    public boolean bShift;
 
-    private boolean dpad_left;
-    private boolean dpad_right;
-    private boolean dpad_up;
-    private boolean dpad_down;
-    private boolean dpad_leftShift;
-    private boolean dpad_rightShift;
-    private boolean dpad_upShift;
-    private boolean dpad_downShift;
+    public boolean dpad_left;
+    public boolean dpad_right;
+    public boolean dpad_up;
+    public boolean dpad_down;
+    public boolean dpad_leftShift;
+    public boolean dpad_rightShift;
+    public boolean dpad_upShift;
+    public boolean dpad_downShift;
 
-    private boolean leftBumper;
-    private boolean rightBumper;
-    private boolean back;
-    private boolean left_bumperShift;
-    private boolean right_bumperShift;
-    private boolean backShift;
+    public boolean leftBumper;
+    public boolean rightBumper;
+    public boolean back;
+    public boolean left_bumperShift;
+    public boolean right_bumperShift;
+    public boolean backShift;
 
-    private double leftStickX;
-    private double rightStickX;
-    private double leftStickY;
-    private double rightStickY;
+    public double leftStickX;
+    public double rightStickX;
+    public double leftStickY;
+    public double rightStickY;
 
-    private double rightTrigger;
+    public double rightTrigger;
 
     public TeleAuto_Instance(double time, boolean x, boolean y, boolean a, boolean b, boolean xShift, boolean yShift, boolean aShift, boolean bShift,
                              boolean dpad_left, boolean dpad_right, boolean dpad_up, boolean dpad_down, boolean dpad_leftShift, boolean dpad_rightShift,
@@ -69,10 +69,16 @@ public class TeleAuto_Instance {
         this.leftStickX = leftStickX;
         this.rightStickX = rightStickX;
         this.leftStickY = leftStickY;
-        this.rightStickX = rightStickX;
+        this.rightStickY = rightStickY;
 
         this.rightTrigger = rightTrigger;
 
+    }
+
+    public String toString(){
+        return time + ", " + x + ", " +  y + ", " +  a + ", " +  b + ", " +  xShift + ", " +  yShift + ", " +  aShift + ", " +  bShift + ", " +  dpad_left + ", " +  dpad_right + ", " +  dpad_up + ", " +  dpad_down + ", " +
+                dpad_leftShift + ", " +  dpad_rightShift + ", " +  dpad_upShift + ", " +  dpad_downShift + ", " +  leftBumper + ", " +  rightBumper + ", " +  back + ", " +
+                left_bumperShift + ", " +  right_bumperShift + ", " +  backShift + ", " +  leftStickX + ", " +  rightStickX + ", " +  leftStickY + ", " +  rightStickY + ", " +  rightTrigger;
     }
 
 
